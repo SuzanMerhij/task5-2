@@ -1,0 +1,76 @@
+
+.dropdown-menu {
+  max-height: 200px;
+  overflow-y: auto;
+  
+}
+.carousel-control-next, .carousel-control-prev{
+ width: 5% !important;
+}
+.vertical-hr {
+  border-left: 3px solid white;
+  height: 100px;
+  color: white !important;
+}
+ .highlight-dot {
+      position: relative;
+      display: inline-block;
+    }
+
+    .highlight-dot::before {
+      content: "";
+      position: absolute;
+      top: 63%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 10px;
+      height: 10px;
+      background-color:RED;
+      border-radius: 50%;
+      box-shadow: 0 0 10px RED;
+    }
+
+    .highlight-dot::after {
+      content: "";
+      position: absolute;
+      top: 62%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 90px;
+      background-color: red;
+    }
+
+.footer{
+  background-image: url("../img/footer.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#hiddenText{
+  display: none;
+}
+
+.gallery{
+  max-width: 1300px;
+  display: flex;
+  overflow-x: scroll ;
+}
+.gallery div{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  flex: none;
+}
+.Card{
+  border: 1px solid green;
+}
+.gallery::-webkit-scrollbar{
+  display: none;
+}
+.wrap-gallery{
+  margin: 10% auto;
+}
+#BackBtn ,#NextBtn{
+  width: 50px;
+  cursor: pointer;
+  margin: 40px;
+}
